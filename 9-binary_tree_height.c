@@ -20,7 +20,7 @@ size_t calcHeight(const binary_tree_t *tree, size_t counter)
 
 	leftValue = calcHeight(tree->left, counter + 1);
 	rightValue = calcHeight(tree->right, counter + 1);
-	return ((leftValue > rightValue)? leftValue : rightValue);
+	return ((leftValue > rightValue) ? leftValue : rightValue);
 }
 
 /**
